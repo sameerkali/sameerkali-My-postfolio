@@ -1,0 +1,330 @@
+@import url(./style.css);
+
+
+@media(min-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width:768px) {
+    .container{
+        max-width: 760px;
+        /* color: red; */
+    }
+}
+@media(min-width:992px) {
+    .container{
+        max-width: 960px;
+        /* color: red; */
+    }
+}
+@media(min-width:1200px) {
+    .container{
+        max-width: 1152px;
+        /* color: red; */
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.phone-logo{
+    display: none;   
+}
+mobile-nav
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.hamberger img{
+    width: 30px;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* --------------------------------------..........>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    z-index: 1111;
+    background: var(--dark);
+    width: 100%;
+    height: 40rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition:all .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--pure);
+}
+.times img{
+    width: 30px;
+}
+.mobile-nav ul{
+    list-style-type: none;
+    
+}
+.mobile-nav .mobile-nav-logo img{
+    padding: 1rem;
+}
+.mobile-nav ul li a{
+    padding: rem;
+    color: var(--pure);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.mobile-nav ul li a:hover{
+    color: var(--primary);
+    transition:all .3s ease;
+}
+/* ....................................ipad............................................................ */
+@media only screen and (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .phone-logo{
+        position: absolute;
+        display: block;
+        z-index: 11;
+        left: 5rem;
+        top: 3rem;
+    }
+    .hamberger{
+        display: block;
+    }
+    .hero .left img{
+        width:260px !important;
+    }
+    .hero .right h1{
+        
+        font-size: 3rem !important;
+    }
+    .hero{
+        padding-top: 10rem !important;
+    }
+    header{
+            clip-path:polygon(0 0,100% 0 , 100% 100% , 25% 90% , 0 98%) !important;
+        }
+        section .about-me-iamge{
+            height: 460px !important;
+            vertical-align: 563px !important;  
+            width: 300px !important;
+            position: absolute;
+            left: 5pc;
+            top: 59pc;
+        }
+        section .right h1{
+            text-align: center;
+        }
+        section .right h3{
+            text-align: center;
+        }
+        section .right p{
+            text-align: right;
+        }
+        section .right h1{
+            text-align: center;
+           
+        }
+        section .right .social{
+
+            position: absolute !important;
+            right: 155px !important ;
+        }
+        section .right .social a img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        section .right .social{
+            gap: 70px;
+        }
+    section #about .right{
+        /* color: red; */
+        align-items: center;
+    }
+    .services .card-wrapper{
+        grid-template-columns:repeat(2,1fr) !important;
+
+    }
+    .freelancer{
+        clip-path: polygon(0 0,100% 0 , 100% 100% , 34% 83% , 0 98%) !important;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    section.blog .card-wrapper{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    section.blog{
+        clip-path: polygon(0 0,100% 0 , 100% 100% , 27% 95%  , 0 98%) !important;
+    }
+    section.blog .img-blog{
+        width: 735px;
+    }
+    section.blog .card-wrapper .card .card-content{
+        padding-bottom: 4rem !important;
+        padding-top: 4rem !important;
+    }
+}
+
+
+/* ....................................MOBILE............................................................ */
+
+
+
+@media(max-width:576px) {
+
+    
+    .site-main-wrapper .phone-logo{
+        position: absolute;
+        display: block;
+    }
+    .phone-logo{
+        position: absolute;
+        display: block;
+        z-index: 11;
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .hero{
+        flex-direction: column !important;   
+    }
+    header {
+        clip-path: polygon(0% 0%,100% 0% , 100% 100% , 69% 97% , 0 100%) !important;
+    }
+
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        background:linear-gradient(0,0,0,0),rgba(0,0,0,0.9);
+    }
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        margin-bottom: 4rem;
+    }
+    section#about{
+        height: 1000px;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    section .about-me-iamge{
+        height: 293px !important;
+        vertical-align: 563px !important;  
+        width: 235px !important;
+        position: absolute;
+        left: 5.5pc;
+        top: 46pc;
+    }
+    /* .............................................page2{complicated}................................................... */
+    section .right h1{
+        text-align: center;
+        right: 9rem;
+        position: absolute;
+        top: 67rem;
+    }
+    section .right h3{
+        text-align: center;
+        position: absolute;
+        top: 69.5rem;
+        right: 7rem;
+    }
+    section .right p{
+        text-align: right;
+        position: absolute;
+        top: 74rem;
+        margin-bottom: 1.5rem;
+        margin-right: 43px;
+        left: 2rem;
+        padding: 0;
+        text-align: center;
+        /* top: 73rem; */
+    }
+    section .right h1{
+        text-align: center;
+       
+    }
+    section .right .social{
+
+        position: absolute !important;
+        right: 65px !important ;
+        top: 98rem;
+    }
+    section .right .social a img {
+        width: 49px !important;
+        height: 49px !important;
+    }
+    section .right .social {
+        gap: 12px !important;
+    }
+    section .right .social{
+        gap: 70px;
+    }
+    .services .card-wrapper {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .freelancer {
+        clip-path: polygon(0 0,100% 0 , 100% 100% , 34% 88% , 0 98%) !important;
+        padding-bottom: 8rem !important;
+    }
+    section.freelancer h1{
+        line-height: 2.4rem;
+    }
+    section.review .slider .slide{
+        padding: 0 0rem !important;
+    }
+    .section-heading + p{
+        margin-bottom: 3rem;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .container {
+        max-width: 1152px;
+        padding: 0 27px;
+        margin: 0 auto;
+    }
+    .container .p1{
+        margin-bottom:2rem !important;
+    }
+    section.blog {
+        clip-path: polygon(0 0,100% 0 , 100% 100% , 70% 98% , 0 100%) !important;
+    }
+    section.blog .img-blog {
+        width: 382px;
+    }
+    section.blog {
+        padding-bottom: 11rem !important;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    section.services .card-wrapper .card {
+        margin-top: 23px;
+    }
+}

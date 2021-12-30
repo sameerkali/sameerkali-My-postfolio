@@ -1,0 +1,530 @@
+@import 'utilities.css';
+:root{
+    --primary:#3dcfd3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secoundry:#070606;
+}
+mobile-nav
+body{
+    width: auto;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing:antialiased;  
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    background-color: var(--dark);
+    clip-path:polygon(0 0,100% 0 , 100% 100% , 65% 87% , 0 98%);
+}
+.container{
+        max-width: 1152px;
+        padding:0 15px;
+        margin: 0 auto;
+}
+header nav .left a{
+    font-weight: 550;
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+header nav .left a:hover{
+    color: var(--primary);
+    transition:all .3s ease;
+}
+header nav{
+    padding: 2rem 0 ;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--pure);
+    margin-top: -7rem;
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+
+}
+
+/* <!-- .............................................................................................................. --> */
+
+section{
+    padding: 6rem 0;
+} 
+section .about-me-iamge{
+        height: 450px;
+        /* width: auto; */
+}
+section .right h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+section .right h1 span{
+    color: var(--primary);
+}
+section .right h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+section .right p{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    margin-right: 50px;
+}
+section .right .social{
+    display: flex;
+}
+section .right .social a{
+    background: var(--pure);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+section .right .social a:hover{
+    background: var(--primary);
+    transition: all 0.3s ease;
+}
+section .right .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+section .left{
+    margin-left: 200px;
+}
+
+
+/* .................................................................................................................. */
+
+.services{
+    background: var(--light);
+}
+.sectiom-heding{
+    color: var(--secoundry);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: o.5;
+}
+.sectiom-heding span{
+    color: var(--primary);
+}
+.section-heading{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.container  .p1{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8rem;
+    font-weight:900;
+    text-align: center;
+} 
+.card .brush{
+    background: #3dcfd3;
+}
+.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 3.5rem;
+    text-align: center;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+    transition: all 0.5s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -2.4rem;
+    left: 50%;
+    transform: translateX(-33px);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card:hover h2 , section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+    transition: all 0.5s ease;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* .................................................................................................................. */
+
+
+.freelancer{
+    text-align: center;
+    /* background: linear-gradient (rgba(0,0,0,0.7),(rgba(0,0,0,0.7)),url(../image/camera.png); */
+    background: url(../image/camera.png);
+    color: var(--pure);
+    clip-path:polygon(0 0,100% 0 , 100% 100% , 70% 70% , 0 98%);
+    padding-bottom: 14rem;
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom:0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
+}
+
+/* ...............................................................................................................  */
+
+section.review .slider .slide img{
+width: 100px;
+height: 100px;
+object-fit: cover;
+margin-bottom: 2rem;
+
+}
+section.review .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15rem;
+}
+section.review .slider .slide p{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
+    columns: var(--ternary);
+    margin-bottom: 1rem;
+    font-weight: 550;
+}
+
+section.review .slider .slide span{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+section.review .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+
+}
+section.review .slider-dots {
+    margin-top: 3rem;
+}
+section.review .slider-dots button{
+    font-size: 0;
+    width: 6px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+section.review .dots li.slick-active button{
+background: var(--primary);
+width: 30px;
+}
+
+/* ...............................................................................................................  */
+
+section.work{
+    background: var(--light);
+}
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.work .card-wrapper .card{
+    height: 250px;
+    position: relative;
+}
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0.25;
+}
+section.work .card-wrapper .card:hover .overlay{
+opacity: 1;
+transition: all 0.3s ease;
+}
+section.work .card-wrapper .card .overlay a{
+    color: var(--secoundry);
+    text-decoration: none;
+}
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+section.work .card-wrapper .card .overlay span{
+    cursor: pointer;
+}
+
+/* ...............................................................................................................  */
+
+section.blog{
+    background: var(--dark);
+    clip-path:polygon(0 0,100% 0 , 100% 100% , 70% 85% , 0 98%);
+    padding-bottom: 15rem;
+}
+section.blog .sectiom-heding{
+    color: var(--pure);
+}
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    
+}
+
+section.blog .card-wrapper .card{
+    background: var(--pure);
+}
+/* section.blog .card-wrapper .card .img-wrapper{
+    height: auto;
+    width: auto;
+    object-fit: cover;
+} */
+section.blog .card-wrapper .card .card-content{
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secoundry);
+    text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+        color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ternary);
+    margin: top 1rem; 
+    margin-bottom: 1rem;
+    font-weight: 800;
+
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+/* ...............................................................................................................  */
+
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+
+}
+section.contact .card-wrapper .card{
+        text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-style: 1rem;
+    color: var(--ternary);
+    margin-bottom: 4rem;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column; 
+}
+section.contact input{
+    padding: .5rem;
+    border:1px solid rgba(128, 128, 128, 0.555);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border:1px solid rgba(128, 128, 128, 0.555);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border:1px solid rgba(128, 128, 128, 0.555);
+    font-size: 1rem;
+}
+section.contact input:focus{
+    outline: none;
+}
+section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+/* .................................................................................................................... */
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo{
+        margin-bottom: 3rem;
+        width: 180px    ;
+}
+footer .footer-socials a{
+    margin-right: 1rem;
+
+}
+footer .footer-socials {
+    color: var(--light);
+    margin-bottom: 2rem;
+    margin-right: -0.7rem;
+}
+footer .copyright{
+    color: var(--ternary);
+}
+
+/* ...............................................................................................................  */
+
+
+
+/* @media (max-wiidth: 1024px){
+    header#main-nav {
+        display: none;
+    }
+}  
+
+  
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 30px;
+} */
